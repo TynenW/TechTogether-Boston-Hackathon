@@ -1,5 +1,5 @@
 //As soon as the webpage is open, time is being counted.
-var minsBtwnBreak=1; 
+var minsBtwnBreak=60; 
 function markPresent() {
   window.markDate = new Date();
   $(document).ready(function() {

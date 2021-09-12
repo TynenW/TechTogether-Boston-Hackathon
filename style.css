@@ -5,6 +5,14 @@ h1, h2, h3, h4, h5, h6, .serif-font {
   font-family: 'Kaisei Tokumin', serif;
 }
 
+/* Nav Bar */
+.nav-timer-text {
+  padding: 0 0.5em 0 0.5em;
+  text-align:center;
+}
+
+
+
 
 /* Progress Bar */
 .progress-bar-vertical {
