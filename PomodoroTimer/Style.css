@@ -1,0 +1,59 @@
+/* Body background and font */
+body {
+  background: #B5838D;
+  font-family: 'Kaisei Tokumin', serif;
+}
+
+/* Main heading */
+.heading {
+  color: #FFFFFF;
+}
+
+/* Countdown timer */
+.timer {
+  color: #ffffff;
+  text-align: center;
+  width: 20rem;
+  height: 20rem;
+  border: 5px solid #fff;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+}
+
+/* remove the padding on the play button */
+.btn {
+  padding: 0;
+}
+
+/* play and reset icons */
+.fa-play,
+.fa-redo-alt {
+  color: #6D6875;
+  border: 2px solid transparent;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.fa-play:hover,
+.fa-redo-alt:hover {
+  color: #6D6875;
+  border: 2px solid #6D6875;
+  transition: 0.3s ease;
+}
+
+/* Dynamic class */
+/* Make the message visible */
+.show_message {
+  display: block;
+  padding: 1rem 0;
+  color: #272343;
+  background: #FFFF;
+  border-radius: 0.5rem;
+  transition: 0.5s ease;
+}

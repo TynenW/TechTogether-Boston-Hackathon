@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>repl.it</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="custom-bootstrap.css">
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<!-- script to load HTML components -->
+	<script src="https://code.jquery.com/jquery-1.10.2.js">
+
+	</script>
+
+	<!-- Plan CSS -->
+	<link rel="stylesheet" href="PageResources/plan-style.css" />
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/996973c893.js">
+
+	</script>
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body">
+	<!--Navigation bar-->
+	<div id="nav-placeholder"></div>
+	<script>
+		$(function(){
+  $("#nav-placeholder").load("PageResources/nav.html");
+});
+	</script>
+	<!--end navigation bar-->
+
+	<!-- Page Content -->
+	<div class="container ">
+
+		<div class="row">
+      <div class="col">
+			<div class="plan-wrapper">
+				<h3>Editing Adventure Plan</h3>
+				<div class="add-wrapper">
+					<form name="plan-adder" id="plan-form" class="">
+						<input type="text" id="plan-entry-box" class="bg-light" />
+        </form>
+        <button id="add-button" class="pretty-button bg-primary">Add</button>
+        
+        <br />
+        <ol id="plan-list">
+        </ol>
+        <div id="control-wrapper">
+            <button id="empty-button" class="pretty-button bg-danger">Clear Plan</button>
+            <button id="save-button" class="pretty-button bg-success">Save Plan</button>
+        </div>
+    </div>
+  </div>
+      </div>
+
+<div class="col-3">
+<h5 class="text-center">You've taken</h5>
+<div id="total-completed" class="text-center circled-stat text-white"></div>
+<h5 class="text-center">steps out of your comfort zone! Keep it up!</h5>
+</div>
+<div class="col-1">
+  
+</div>
+
+<script>
+  $(function(){
+    document.getElementById("total-completed").innerHTML =JSON.parse(localStorage.getItem("total-completed"));
+
+    });
+    </script>
+
+</div>
+	</div>
+
+
+	<script src="script.js ">
+	</script>
+  <!-- Plan script -->
+  <script src="PageResources/plan-script.js">
+	</script>
+	<!-- Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ "
+	 crossorigin="anonymous ">
+	</script>
+
+</body>
+
+</html>
