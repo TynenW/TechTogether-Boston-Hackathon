@@ -36,8 +36,8 @@ function breakCalc(sec){
   var numseconds = parseInt((((sec % 31536000) % 86400) % 3600) % 60, 10); 
   var nextBreakMins=minsBtwnBreak-numminutes-1;
   var nextBreakSec=60-numseconds;
-  if //(nextBreakMins === -1 ){
-  (nextBreakSec <= 59){
+  if (nextBreakMins === -1 ){
+  //(nextBreakSec <= 59){
     minsBtwnBreak=minsBtwnBreak*2;
     popup();
     }
