@@ -103,7 +103,7 @@ function saveList() {
     var plan = planList.children.item(i);
 
     var planInfo = {
-      "task": plan.innerText.slice(2), //exclude checkmark and space
+      "task": plan.innerText.slice(1), //exclude checkmark
       "completed": plan.classList.contains("completed")
     };
 
